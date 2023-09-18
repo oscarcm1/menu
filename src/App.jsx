@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import './App.css'
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
 
