@@ -29,6 +29,7 @@
   -moz-border-radius: 0px 10px 10px 0px;
   -ms-border-radius: 0px 10px 10px 0px;
   -o-border-radius: 0px 10px 10px 0px;
+  overflow: scroll;
 }
 
 .menu-dashboard.active {
@@ -76,11 +77,11 @@ li.menu-item.logout {
   position: fixed;
   bottom: 0;
   background-color: rgba(86, 98, 236, 0.872);
-  border-radius: 0px 10px 10px 0px;
-  -webkit-border-radius: 0px 10px 10px 0px;
-  -moz-border-radius: 0px 10px 10px 0px;
-  -ms-border-radius: 0px 10px 10px 0px;
-  -o-border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 0px 10px 0px;
+  -webkit-border-radius: 0px 0px 10px 0px;
+  -moz-border-radius: 0px 0px 10px 0px;
+  -ms-border-radius: 0px 0px 10px 0px;
+  -o-border-radius: 0px 0px 10px 0px;
 }
 
 li.menu-item span {
@@ -146,45 +147,16 @@ li.bg-logo {
 }
 
 @media (max-width: 960px) {
-  li.bg-logo,
-  li.btn-menu {
-    display: none;
-  }
-
-  li.menu-item span {
-    display: none;
-  }
-
-  .menu-dashboard,
-  .menu-dashboard.active {
-    position: fixed;
-    width: 100%;
-    height: 60px;
-    background-color: rgba(19, 32, 152, 0.211);
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .menu {
     display: flex;
+    flex-direction: column;
   }
 
   ul.menu {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-  }
-
-  li.menu-item {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
   }
 
   li.menu-item:hover {
@@ -199,14 +171,30 @@ li.bg-logo {
     margin: 0;
   }
 
+  .bg-menu {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    overflow-y: scroll;
+  }
+
   li.menu-item {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    padding: 0;
+    display: block;
+  }
+
+  li.menu-item.logout {
+    position: relative;
+  }
+
+  .bg-menu {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    display: block;
+  }
+
+  .menu-dashboard {
+    display: block;
   }
 }
