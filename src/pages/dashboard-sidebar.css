@@ -159,10 +159,9 @@ li.bg-logo {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .menu-dashboard {
     position: relative;
-    height: auto;
   }
   li.menu-item i {
     padding: 0px;
@@ -178,9 +177,7 @@ li.bg-logo {
     overflow-y: scroll;
   }
 
-  li.menu-item.logout {
-    position: relative;
-  }
+ 
 
   .bg-menu {
     position: relative;
@@ -194,9 +191,24 @@ li.bg-logo {
   }
 }
 
-@media (max-width: 360px) and (orientation: landscape) {
-  .menu-dashboard {
-    position: relative;
-    height: auto;
-  }
+
+
+@media (max-width:240px) {
+    li.menu-item.logout {
+        position: relative;
+      }
+    
 }
+
+
+@media (max-width: 360px) and (orientation: landscape) {
+    .menu-dashboard {
+      position: relative;
+      height: auto;
+    }
+  }
+  
+  
+
+
+
