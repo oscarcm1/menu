@@ -29,7 +29,6 @@
   -moz-border-radius: 0px 10px 10px 0px;
   -ms-border-radius: 0px 10px 10px 0px;
   -o-border-radius: 0px 10px 10px 0px;
-  overflow: scroll;
 }
 
 .menu-dashboard.active {
@@ -158,13 +157,13 @@ li.bg-logo {
     justify-content: space-between;
     align-items: center;
   }
-
-  li.menu-item:hover {
-    background-color: rgba(255, 255, 255, 0.313);
-  }
 }
 
 @media (max-width: 360px) {
+  .menu-dashboard {
+    position: relative;
+    height: auto;
+  }
   li.menu-item i {
     padding: 0px;
     font-size: 10px;
@@ -177,10 +176,6 @@ li.bg-logo {
     width: 100%;
     height: auto;
     overflow-y: scroll;
-  }
-
-  li.menu-item {
-    display: block;
   }
 
   li.menu-item.logout {
@@ -196,5 +191,12 @@ li.bg-logo {
 
   .menu-dashboard {
     display: block;
+  }
+}
+
+@media (max-width: 360px) and (orientation: landscape) {
+  .menu-dashboard {
+    position: relative;
+    height: auto;
   }
 }
