@@ -1,0 +1,241 @@
+:root {
+  --color-text: rgb(121, 121, 121);
+  --color-bi: #72849e;
+}
+
+.menu {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images2.alphacoders.com/131/1316862.png");
+  background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/8957.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: monospace;
+}
+
+.card-menu {
+  position: fixed;
+  width: 300px;
+  height: 90vh;
+  background-color: rgba(255, 255, 255, 0.705);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  backdrop-filter: blur(2px);
+}
+.card-menu.active {
+  position: fixed;
+  width: 60px;
+  height: 90vh;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.card-menu.active.message span {
+  background-color: black;
+  display: none;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo img {
+  width: 60px;
+  mix-blend-mode: difference;
+}
+.logo h1 {
+  display: block;
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+.logo.active h1 {
+  display: none;
+}
+
+.list-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.list-menu.active {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-menu.active span {
+  font-size: 0px;
+}
+
+ul.menu-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  list-style: none;
+}
+.menu-item li {
+  width: 100%;
+}
+
+.list-menu button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 42, 0);
+  padding: 10px 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.list-menu.active button {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+}
+
+button.btn:hover {
+  background-color: white;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.box-message {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  overflow-y: hidden;
+  padding: 40px 0px;
+}
+
+.box-message h2 {
+  text-transform: uppercase;
+  color: var(--color-text);
+  font-size: 1rem;
+  padding: 10px;
+}
+.card-message {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 200px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0px 20px;
+}
+
+.card-message.active {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.message {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.card-message.active p,
+.card-message.active span,
+.card-message.active h2 {
+  display: none;
+}
+
+.picture {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(117, 139, 228);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.message span {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.open {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.open button {
+  background-color: aliceblue;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  border-bottom: 1px solid rgba(23, 41, 78, 0.393);
+  padding: 5px;
+}
+
+.bi {
+  color: var(--color-bi);
+}
