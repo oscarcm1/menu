@@ -7,9 +7,106 @@
 body,
 html {
   width: 100%;
-  height: 100vh;
+  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6971682a-28de-483a-a23e-60a37468a5ff/dfzlwpn-536c1695-8ef4-4de2-98c7-d8ec70139ea1.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY5NzE2ODJhLTI4ZGUtNDgzYS1hMjNlLTYwYTM3NDY4YTVmZlwvZGZ6bHdwbi01MzZjMTY5NS04ZWY0LTRkZTItOThjNy1kOGVjNzAxMzllYTEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZkYwlHtZ-VJcHgTW4-UQg_N5WAuiLHsIW3UIfRBkekk");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.box {
+  position: relative;
+  width:100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 40px;
+  gap: 20px;
+}
+
+.card {
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   
+     width: auto;
+     height: 500px;
+     background-color: rgba(255, 255, 255, 0.301);
+     gap: 20px;
+     border-radius: 20px;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     -ms-border-radius: 20px;
+     -o-border-radius: 20px;
+     backdrop-filter: blur(4px);
+     border: 1px solid white;
+}
+
+.card p{
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.card img {
+  width: 80%;
+  object-fit: cover;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.card img:hover {
+  width: 100%;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.card:nth-child(1):hover {
+  background-color: green;
+}
+
+.card:nth-child(2):hover {
+  background-color: skyblue;
+}
+.card:nth-child(3):hover {
+  background-color: yellow;
+}
+
+
+@keyframes id {
+
+  from{
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+}
+
+  to{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+  
 }
