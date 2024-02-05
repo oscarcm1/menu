@@ -1,174 +1,173 @@
 /* Credit and Thanks:Oscar_digital_design; */
 
 .bg-menu {
-    position: relative;
-    background-color: rgb(87, 88, 89);
-    width: 100%;
-    height: 100vh;
-    background-image: url("https://img.freepik.com/foto-gratis/hombre-tiro-medio-gafas-vr_23-2149126949.jpg?w=900&t=st=1694949422~exp=1694950022~hmac=798cbf96f2f0a66c5fb0bbd1d55ee1407add24e82a1a3bd2bc235173834b24fd");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .menu-glass {
-    width: 300px;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    backdrop-filter: blur(5px);
-    transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-    border-right: 1px solid rgba(255, 255, 255, 0.246);
-    background-color: rgba(7, 139, 255, 0.1);
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  }
-  
-  .menu-glass.active {
-    width: 50px;
-    transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-  }
-  
+  position: relative;
+  background-color: rgb(87, 88, 89);
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://img.freepik.com/vector-gratis/fondo-conexion-red-degradado_23-2148872043.jpg?w=1280&t=st=1707122237~exp=1707122837~hmac=b78f0a1b66e3f90874ea9a76375139c405177894a7b29f5210bec0368e6969f8");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-glass {
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  backdrop-filter: blur(5px);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  border-right: 1px solid rgba(255, 255, 255, 0.246);
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.menu-glass.active {
+  width: 50px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+li.btn-menu {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+li.btn-menu button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+li.btn-menu i {
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.menu-glass span {
+  background-color: rgba(240, 248, 255, 0);
+}
+
+li.menu-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
+li.menu-item span {
+  width: 100%;
+}
+
+li.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.313);
+}
+
+li.bg-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+}
+
+.bg-logo img {
+  width: 100%;
+}
+.menu-glass nav {
+  width: 100%;
+  overflow-y: scroll;
+  overflow-y: hidden;
+}
+
+.menu-glass li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.menu-glass.active span,
+.menu-glass.active h1 {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  li.bg-logo,
   li.btn-menu {
-    display: flex;
-    justify-content: end;
-    width: 100%;
+    display: none;
   }
-  
-  li.btn-menu button {
-    width: 40px;
-    height: 40px;
-    border: none;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
-  }
-  
-  li.btn-menu i {
-    color: white;
-    font-weight: 900;
-    font-size: 20px;
-  }
-  
-  .menu-glass span {
-    background-color: rgba(240, 248, 255, 0);
-  }
-  
-  li.menu-item {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 20px;
-    color: white;
-  }
-  
+
   li.menu-item span {
-    width: 100%;
+    display: none;
   }
-  
-  li.menu-item:hover {
-    background-color: rgba(255, 255, 255, 0.313);
-  }
-  
-  li.bg-logo {
+
+  .menu-glass,
+  .menu-glass.active {
+    position: fixed;
     width: 100%;
+    height: 60px;
+    background-color: rgba(19, 32, 152, 0.211);
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: 10px;
-    color: white;
   }
-  
-  .bg-logo img{
-    width: 100%;
+
+  .menu {
+    display: flex;
   }
-  .menu-glass nav {
-    width: 100%;
-    overflow-y: scroll;
-    overflow-y: hidden;
+
+  ul.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
-  
-  .menu-glass li {
-    list-style: none;
-    cursor: pointer;
+
+  li.menu-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
   }
-  
-  .menu-glass.active span,
-  .menu-glass.active h1 {
-    display: none;
+
+  li.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.313);
   }
-  
-  @media (max-width: 960px) {
-    li.bg-logo,
-    li.btn-menu {
-      display: none;
-    }
-  
-    li.menu-item span {
-      display: none;
-    }
-  
-    .menu-glass,
-    .menu-glass.active {
-      position: fixed;
-      width: 100%;
-      height: 60px;
-      background-color: rgba(19, 32, 152, 0.211);
-      bottom: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .menu {
-      display: flex;
-    }
-  
-    ul.menu {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-  
-    li.menu-item {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-    }
-  
-    li.menu-item:hover {
-      background-color: rgba(255, 255, 255, 0.313);
-    }
+}
+
+@media (max-width: 360px) {
+  li.menu-item i {
+    padding: 0px;
+    font-size: 10px;
+    margin: 0;
   }
-  
-  @media (max-width: 360px) {
-    li.menu-item i {
-      padding: 0px;
-      font-size: 10px;
-      margin: 0;
-    }
-  
-    li.menu-item {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-      padding: 0;
-    }
+
+  li.menu-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 0;
   }
-  
+}
